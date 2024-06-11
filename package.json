@@ -1,0 +1,21 @@
+{
+  "name": "rtmp-server",
+  "version": "1.0.0",
+  "description": "A simple RTMP server using node-media-server.",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pm2 start conf/pm2.json",
+    "stop": "pm2 stop conf/pm2.json",
+    "restart": "pm2 restart conf/pm2.json",
+    "log": "pm2 log --lines 100"
+  },
+  "keywords": [],
+  "author": "Julien",
+  "license": "ISC",
+  "dependencies": {
+    "node-media-server": "^2.7.0",
+    "pm2": "^5.4.0"
+  }
+}

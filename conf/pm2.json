@@ -1,0 +1,8 @@
+{
+  "apps": [
+    {
+      "name": "Rtmp Server",
+      "script": "./app.js"
+    }
+  ]
+}
