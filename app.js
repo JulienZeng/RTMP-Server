@@ -1,18 +1,7 @@
 import NodeMediaServer from 'node-media-server';
+import { getConfig } from './utils/configLoader.js';
 
-const config = {
-  rtmp: {
-    port: 1935,
-    chunk_size: 4096,
-    gop_cache: true,
-    ping: 0,
-    ping_timeout: 60
-  },
-  http: {
-    port: 8000,
-    allow_origin: '*'
-  }
-};
+const cfg = getConfig();
 
-const nms = new NodeMediaServer(config)
+const nms = new NodeMediaServer(cfg)
 nms.run();

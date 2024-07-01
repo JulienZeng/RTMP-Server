@@ -15,7 +15,10 @@
   "author": "Julien",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^20.14.9",
     "node-media-server": "^2.7.0",
-    "pm2": "^5.4.0"
+    "path": "^0.12.7",
+    "pm2": "^5.4.0",
+    "yaml": "^2.4.5"
   }
 }
